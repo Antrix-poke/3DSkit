@@ -18,8 +18,9 @@ Fork of 3DSkit https://github.com/Tyulis/3DSkit
 * You must have Python version 3.5 to 3.9 installed
 
 * it will not work on newer versions
+  
 
-* Example commands that work
+Example commands that work
 
 
 decompress general
@@ -64,16 +65,17 @@ compress GARC
 
 * python 3DSkit.py -pdvf GARC -O version=6 5
 
+Explanations
 
-* dec_02.bin filename
-* 
-* dec2.png filename
-* 
-* 5 folder name
-* 
-* 02 filename
-* 
-* 02.bin filename
+dec_02.bin filename
+
+dec2.png filename
+
+5 folder name
+
+02 filename
+
+02.bin filename
 
 
 files and folders must be in the same folder as 3DSkit.py 
@@ -119,11 +121,14 @@ compress GARC
 
 * C:\Python39\python.exe 3DSkit.py -pdvf GARC -O version=6 5_
 
-* dec_2.bflim filename
+Explanations
+
+
+ dec_2.bflim filename
   
-* dec_2.png filename
+dec_2.png filename
   
-* 5 folder name
+5 folder name
 
 
 Extract
