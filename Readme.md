@@ -78,21 +78,21 @@ dec2.png filename
 02.bin filename
 
 
-files and folders must be in the same folder as 3DSkit.py 
+* files and folders must be in the same folder as 3DSkit.py 
 
 
-otherwise the command would have to be different to indicate the location of the file
+* otherwise the command would have to be different to indicate the location of the file
 
 
 
-must be installed Numpy and Pillow 
+* must be installed Numpy and Pillow 
 
 
-pip install numpy pillow
+* pip install numpy pillow
 
-pip install numpy
+* pip install numpy
 
-pip install pillow
+* pip install pillow
 
 
 * Numpy (use `sudo apt-get install python3-numpy` or `pip3 install numpy`)
