@@ -15,7 +15,7 @@ Fork of 3DSkit https://github.com/Tyulis/3DSkit
 
 ## How to use
 
-*You must have Python version 3.5 to 3.9 installed
+* You must have Python version 3.5 to 3.9 installed
 
 *it will not work on newer versions
 
