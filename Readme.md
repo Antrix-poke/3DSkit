@@ -16,31 +16,43 @@ Fork of 3DSkit https://github.com/Tyulis/3DSkit
 ## How to use
 
 You must have Python version 3.5 to 3.9 installed
+
 it will not work on newer versions
 
 Example commands that work
 
 decompress general
+
 python 3DSkit.py -x file name
+
 python 3DSkit.py -xv file name
 
 decompress BFLIM
+
 python 3DSkit.py -xv dec_02.bin
 
 compress BFLIM
+
 python 3DSkit.py -pvf BFLIM -O format=RGBA4 -O swizzle=4 dec2.png
+
 python 3DSkit.py -pf BFLIM -O format=RGBA4 -O swizzle=4 dec_2.png
 
 decompress ALYT 
+
 python 3DSkit.py -x file name
+
 python 3DSkit.py -x 02.bin
 
 compress ALYT 
+
 python 3DSkit.py -pf ALYT filename
+
 python 3DSkit.py -pf ALYT 02
+
 python 3DSkit.py -pdvf ALYT 02
 
 compress GARC
+
 python 3DSkit.py -pdvf GARC -O version=6 5
 
 
@@ -74,13 +86,17 @@ cd "C:\Users\username\Downloads\3DSkit"     comes to the folder 3DSkit
 C:\Python39\python.exe   this is where python is installed
 
 decompress BFLIM
+
 C:\Python39\python.exe 3DSkit.py -xv dec_2.bflim
 
 compress BFLIM
+
 C:\Python39\python.exe 3DSkit.py -pf BFLIM -O format=RGBA4 -O swizzle=4 dec_2.png
+
 C:\Python39\python.exe 3DSkit.py -pvf BFLIM -O format=RGBA4 -O swizzle=4 dec_2.png
 
 compress GARC
+
 C:\Python39\python.exe 3DSkit.py -pdvf GARC -O version=6 5_
 
 dec_2.bflim filename
