@@ -45,35 +45,35 @@ compress BFLIM
 decompress ALYT 
 
 
-python 3DSkit.py -x file name
+* python 3DSkit.py -x file name
 
-
-python 3DSkit.py -x 02.bin
+* python 3DSkit.py -x 02.bin
 
 
 compress ALYT 
 
 
-python 3DSkit.py -pf ALYT filename
+* python 3DSkit.py -pf ALYT filename
 
+* python 3DSkit.py -pf ALYT 02
 
-python 3DSkit.py -pf ALYT 02
-
-
-python 3DSkit.py -pdvf ALYT 02
+* python 3DSkit.py -pdvf ALYT 02
 
 
 compress GARC
 
+* python 3DSkit.py -pdvf GARC -O version=6 5
 
-python 3DSkit.py -pdvf GARC -O version=6 5
 
-
-dec_02.bin filename
-dec2.png filename
-5 folder name
-02 filename
-02.bin filename
+* dec_02.bin filename
+* 
+* dec2.png filename
+* 
+* 5 folder name
+* 
+* 02 filename
+* 
+* 02.bin filename
 
 
 files and folders must be in the same folder as 3DSkit.py 
@@ -100,38 +100,40 @@ if you use several versions of python, you need to indicate its location
 
 FOR EXAMPLE using the cmd console  CMD
 
-cd "C:\Users\username\Downloads\3DSkit"     comes to the folder 3DSkit
+* cd "C:\Users\username\Downloads\3DSkit"     comes to the folder 3DSkit
 
 
-C:\Python39\python.exe   this is where python is installed
+* C:\Python39\python.exe   this is where python is installed
 
 decompress BFLIM
 
-C:\Python39\python.exe 3DSkit.py -xv dec_2.bflim
+* C:\Python39\python.exe 3DSkit.py -xv dec_2.bflim
 
 compress BFLIM
 
-C:\Python39\python.exe 3DSkit.py -pf BFLIM -O format=RGBA4 -O swizzle=4 dec_2.png
+* C:\Python39\python.exe 3DSkit.py -pf BFLIM -O format=RGBA4 -O swizzle=4 dec_2.png
 
-C:\Python39\python.exe 3DSkit.py -pvf BFLIM -O format=RGBA4 -O swizzle=4 dec_2.png
+* C:\Python39\python.exe 3DSkit.py -pvf BFLIM -O format=RGBA4 -O swizzle=4 dec_2.png
 
 compress GARC
 
-C:\Python39\python.exe 3DSkit.py -pdvf GARC -O version=6 5_
+* C:\Python39\python.exe 3DSkit.py -pdvf GARC -O version=6 5_
 
-dec_2.bflim filename
-dec_2.png filename
-5 folder name
+* dec_2.bflim filename
+  
+* dec_2.png filename
+  
+* 5 folder name
 
 
 Extract
 
 Paste the required file into the 3dskit folder.
 
-3dskit.py -x file
+* 3dskit.py -x file
 
 or
-Python 3dskit.py -x file
+* python 3dskit.py -x file
 
 "file" can be just the filename if it's in the same folder as the program, or its full address if it's elsewhere.
 
