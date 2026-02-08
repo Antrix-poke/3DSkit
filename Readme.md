@@ -21,37 +21,52 @@ it will not work on newer versions
 
 Example commands that work
 
+
 decompress general
 
 python 3DSkit.py -x file name
 
+
 python 3DSkit.py -xv file name
+
 
 decompress BFLIM
 
+
 python 3DSkit.py -xv dec_02.bin
+
 
 compress BFLIM
 
+
 python 3DSkit.py -pvf BFLIM -O format=RGBA4 -O swizzle=4 dec2.png
+
 
 python 3DSkit.py -pf BFLIM -O format=RGBA4 -O swizzle=4 dec_2.png
 
 decompress ALYT 
 
+
 python 3DSkit.py -x file name
+
 
 python 3DSkit.py -x 02.bin
 
+
 compress ALYT 
+
 
 python 3DSkit.py -pf ALYT filename
 
+
 python 3DSkit.py -pf ALYT 02
+
 
 python 3DSkit.py -pdvf ALYT 02
 
+
 compress GARC
+
 
 python 3DSkit.py -pdvf GARC -O version=6 5
 
@@ -62,16 +77,23 @@ dec2.png filename
 02 filename
 02.bin filename
 
+
 files and folders must be in the same folder as 3DSkit.py 
+
 
 otherwise the command would have to be different to indicate the location of the file
 
 
+
 must be installed Numpy and Pillow 
 
+
 pip install numpy pillow
+
 pip install numpy
+
 pip install pillow
+
 
 * Numpy (use `sudo apt-get install python3-numpy` or `pip3 install numpy`)
 * Pillow (use `sudo apt-get install python3-pil` or `pip3 install pillow`)
@@ -126,18 +148,23 @@ When extracting, the tool will detect the formatting; please take note of this:
 
    Compress
 
+
 3dskit.py -pf folder formatting
 
+
 "formatting" is the format detected during extraction.
+
 
 "folder" is the folder generated during extraction; it will be located in the program's folder.
 
 With the files properly in their places, the command is as follows:
 		python 3dskit.py -pf ALYT 02
+
 			
 			Packing 02.alyt...
 			Packing ALYT
 			Packed!
+
 
    The file 02.alyt will be generated, which you can rename to 02.bin.
 
