@@ -12,6 +12,119 @@ Fork of 3DSkit https://github.com/Tyulis/3DSkit
 * Pack or repack them
 * Decompress and compress these files to and from their original compression
 
+
+## How to use
+
+You must have Python version 3.5 to 3.9 installed
+it will not work on newer versions
+
+Example commands that work
+
+decompress general
+python 3DSkit.py -x file name
+python 3DSkit.py -xv file name
+
+decompress BFLIM
+python 3DSkit.py -xv dec_02.bin
+
+compress BFLIM
+python 3DSkit.py -pvf BFLIM -O format=RGBA4 -O swizzle=4 dec2.png
+python 3DSkit.py -pf BFLIM -O format=RGBA4 -O swizzle=4 dec_2.png
+
+decompress ALYT 
+python 3DSkit.py -x file name
+python 3DSkit.py -x 02.bin
+
+compress ALYT 
+python 3DSkit.py -pf ALYT filename
+python 3DSkit.py -pf ALYT 02
+python 3DSkit.py -pdvf ALYT 02
+
+compress GARC
+python 3DSkit.py -pdvf GARC -O version=6 5
+
+
+dec_02.bin filename
+dec2.png filename
+5 folder name
+02 filename
+02.bin filename
+
+files and folders must be in the same folder as 3DSkit.py 
+
+otherwise the command would have to be different to indicate the location of the file
+
+
+must be installed Numpy and Pillow 
+
+pip install numpy pillow
+pip install numpy
+pip install pillow
+
+* Numpy (use `sudo apt-get install python3-numpy` or `pip3 install numpy`)
+* Pillow (use `sudo apt-get install python3-pil` or `pip3 install pillow`)
+
+if you use several versions of python, you need to indicate its location
+
+FOR EXAMPLE using the cmd console  CMD
+
+cd "C:\Users\username\Downloads\3DSkit"     comes to the folder 3DSkit
+
+
+C:\Python39\python.exe   this is where python is installed
+
+decompress BFLIM
+C:\Python39\python.exe 3DSkit.py -xv dec_2.bflim
+
+compress BFLIM
+C:\Python39\python.exe 3DSkit.py -pf BFLIM -O format=RGBA4 -O swizzle=4 dec_2.png
+C:\Python39\python.exe 3DSkit.py -pvf BFLIM -O format=RGBA4 -O swizzle=4 dec_2.png
+
+compress GARC
+C:\Python39\python.exe 3DSkit.py -pdvf GARC -O version=6 5_
+
+dec_2.bflim filename
+dec_2.png filename
+5 folder name
+
+
+Extract
+
+Paste the required file into the 3dskit folder.
+
+3dskit.py -x file
+
+or
+Python 3dskit.py -x file
+
+"file" can be just the filename if it's in the same folder as the program, or its full address if it's elsewhere.
+
+When extracting, the tool will detect the formatting; please take note of this:
+3dskit.py -x 02.bin
+			
+			-------02.bin-------
+			No compression
+			ALYT file found
+			Extracting...
+			Extracted
+
+   Compress
+
+3dskit.py -pf folder formatting
+
+"formatting" is the format detected during extraction.
+
+"folder" is the folder generated during extraction; it will be located in the program's folder.
+
+With the files properly in their places, the command is as follows:
+		python 3dskit.py -pf ALYT 02
+			
+			Packing 02.alyt...
+			Packing ALYT
+			Packed!
+
+   The file 02.alyt will be generated, which you can rename to 02.bin.
+
 ## Installation
 
 Actually, some 3DSkit modules are based on libkit. This is a "virtual" module, which can be either
